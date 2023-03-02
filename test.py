@@ -10,7 +10,7 @@ YOUTUBE_API_VERSION = "v3"
 youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
     developerKey=DEVELOPER_KEY)
 
-def video_search(youtube, q='自動化', max_results=50):
+def video_search(youtube, q='title', max_results=50):
 
 
     response = youtube.search().list(
